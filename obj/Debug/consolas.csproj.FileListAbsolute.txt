@@ -1,0 +1,7 @@
+c:\users\bachmann\source\repos\consolas\consolas\bin\Debug\consolas.exe.config
+c:\users\bachmann\source\repos\consolas\consolas\bin\Debug\consolas.exe
+c:\users\bachmann\source\repos\consolas\consolas\bin\Debug\consolas.pdb
+c:\users\bachmann\source\repos\consolas\consolas\obj\Debug\consolas.csprojResolveAssemblyReference.cache
+c:\users\bachmann\source\repos\consolas\consolas\obj\Debug\consolas.csproj.CoreCompileInputs.cache
+c:\users\bachmann\source\repos\consolas\consolas\obj\Debug\consolas.exe
+c:\users\bachmann\source\repos\consolas\consolas\obj\Debug\consolas.pdb
