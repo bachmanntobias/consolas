@@ -14,8 +14,28 @@ namespace Grades
             book.AddGrade(91);
             book.AddGrade(89.5f);
 
-            book = new GradeBook();
-            book.AddGrade(75);
+            GradeStatistics stats = book.ComputeStatistics();
+            WriteResult("Average", stats.AverageGrade);
+            WriteResult("Highest", (int)stats.AverageGrade);
+            String m = stats.AverageGrade.ToString(); 
+            WriteResult("Lowest", m );
+
+            GradeBook book2 = book;
+            book2.AddGrade(75);
+        }
+
+        static void WriteResult (String description, float result)
+        {
+            Console.WriteLine($"{description}{" : "}{result:C1}");
+        }
+
+        static void WriteResult(String description, int result)
+        {
+            Console.WriteLine(description + " : " + result);
+        }
+        static void WriteResult(String description, String result)
+        {
+            Console.WriteLine(description + " : " + result);
         }
 
     }
