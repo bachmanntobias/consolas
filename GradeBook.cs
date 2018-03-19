@@ -71,8 +71,8 @@ namespace Grades
             }
         }
         public event NameChangedDelegate NameChanged;
-        //asterisks
+        
         private String _name;
-        private List<float> grades;
+       protected List<float> grades;
     }
 }
