@@ -11,10 +11,15 @@ namespace Grades
         static void Main(string[] args)
         {
             GradeBook book = new GradeBook();
+
+            book.Name = "Scott's Gradebook";
+            book.Name = null;
+            book.AddGrade(75);
             book.AddGrade(91);
             book.AddGrade(89.5f);
 
             GradeStatistics stats = book.ComputeStatistics();
+            Console.WriteLine(book.Name);
             WriteResult("Average", stats.AverageGrade);
             WriteResult("Highest", (int)stats.AverageGrade);
             String m = stats.AverageGrade.ToString(); 
