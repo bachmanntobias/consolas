@@ -14,11 +14,13 @@ namespace Grades
 
 
 
-            ThrowAwayGradeBook = new ThrowAwayGradeBook();
+            GradeBook book = new GradeBook();
             GetBookName(book);
 
             book.AddGrade(75);
             book.AddGrade(91);
+            book.AddGrade(99);
+            book.AddGrade(12);
             book.AddGrade(89.5f);
             SaveGrades(book);
             GradeStatistics stats = book.ComputeStatistics();
@@ -54,10 +56,7 @@ namespace Grades
             {
                 Console.WriteLine(ex.Message);
             }
-            catch (NullReferenceException ex)
-            {
-                Console.WriteLine("Something went wrong!");
-            }
+        
         }
 
 
